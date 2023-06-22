@@ -1,0 +1,7 @@
+{
+  "name": "Fabrisac",
+  "integrations": {
+    "capacitor": {}
+  },
+  "type": "angular"
+}
