@@ -26,6 +26,22 @@ const routes: Routes = [
   {
     path: 'forgot-password',
     loadChildren: () => import('./access/forgot-password/forgot-password.module').then( m => m.ForgotPasswordPageModule)
+  },
+  {
+    path: 'profile',
+    loadChildren: () => import('./user/profile/profile.module').then( m => m.ProfilePageModule)
+  },
+  {
+    path: 'activeguides',
+    loadChildren: () => import('./orders/activeguides/activeguides.module').then( m => m.ActiveguidesPageModule)
+  },
+  {
+    path: 'rolls',
+    loadChildren: () => import('./stock/rolls/rolls.module').then( m => m.RollsPageModule)
+  },
+  {
+    path: 'cutters',
+    loadChildren: () => import('./personal/cutters/cutters.module').then( m => m.CuttersPageModule)
   }
 ];
 
