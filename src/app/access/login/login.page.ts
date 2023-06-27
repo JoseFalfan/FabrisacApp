@@ -7,9 +7,19 @@ import { Component, OnInit } from '@angular/core';
 })
 export class LoginPage implements OnInit {
 
+  ModelUser: string = '';
+  ModelPassword: string = '';
+
   constructor() { }
 
   ngOnInit() {
   }
+
+  validation() {
+    console.log(this.ModelUser);
+    console.log(this.ModelPassword);
+  }
+
+
 
 }

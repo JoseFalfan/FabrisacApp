@@ -1,19 +1,16 @@
 <ion-header>
-  <ion-toolbar>
-    <ion-title class="ion-text-center">
-      <img alt="logo" src="../../assets/icon/LOGO-FABRISAC-.jpg">
-    </ion-title>
-  </ion-toolbar>
+  
 </ion-header>
 
-<ion-content >
-  <ion-grid>
+<ion-content class="ion-padding" >
+  <ion-grid class="ion-padding">
+    <ion-img alt="logo" src="../../assets/icon/LOGO-FABRISAC-.jpg"></ion-img>
     <ion-row>
-      <ion-col align-self-center>
+      <ion-col align-self-center class="ion-margin-top">
         <ion-button [routerLink]="['/registration']" expand="block" color="primary">Register</ion-button>
-        <span class="divider-line">o</span>
+        <span class="ion-text-center">o</span>
         <br>
-        <span class="already">Ya eres Usuario?</span>
+        <span class="ion-text-center">Ya estas registrado?</span>
         <ion-button [routerLink]="['/login']" expand="block" color="danger">Sign In</ion-button>
       </ion-col>
     </ion-row>

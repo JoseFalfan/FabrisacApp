@@ -8,17 +8,17 @@
 </ion-header>
 <ion-content>
   <form>
-    <ion-item lines="full">
+    <ion-item lines="full" class="ion-margin-top">
       <ion-label position="floating">Usuario</ion-label>
-      <ion-input type="text" required></ion-input>
+      <ion-input type="text" required [(ngModel)]="ModelUser" [ngModelOptions]="{standalone: true}"></ion-input>
     </ion-item>
     <ion-item lines="full">
       <ion-label position="floating">Contraseña</ion-label>
-      <ion-input type="password" required></ion-input>
+      <ion-input type="password" required [(ngModel)]="ModelPassword" [ngModelOptions]="{standalone: true}"></ion-input>
     </ion-item>
     <ion-row>
-      <ion-col>
-        <ion-button type="submit" [routerLink]="['/folder/:id']" color="danger" expand="block">Iniciar Sesion</ion-button>
+      <ion-col class="ion-margin-top">
+        <ion-button type="submit" [routerLink]="['/activeguides']" color="success" expand="block">Iniciar Sesion</ion-button>
         <a [routerLink]="['/forgot-password']" class="small-text">Olvidaste tu contraseña?</a>
       </ion-col>
     </ion-row>

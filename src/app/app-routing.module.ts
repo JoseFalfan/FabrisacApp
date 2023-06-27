@@ -1,5 +1,6 @@
 import { NgModule } from '@angular/core';
 import { PreloadAllModules, RouterModule, Routes } from '@angular/router';
+import { DbService } from './services/db.service';
 
 const routes: Routes = [
   {
@@ -34,6 +35,7 @@ const routes: Routes = [
   {
     path: 'activeguides',
     loadChildren: () => import('./orders/activeguides/activeguides.module').then( m => m.ActiveguidesPageModule)
+    
   },
   {
     path: 'rolls',
