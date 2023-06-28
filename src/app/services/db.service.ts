@@ -11,7 +11,7 @@ export class DbService {
   public database!: SQLiteObject;
   // variables para las intrucciones SQL - variable para la creacion de tablas
   userTable: string =
-    'CREATE TABLE IF NOT EXISTS user(id_user INTEGER PRIMARY KEY autoincrement, name_user VARCHAR(50) NOT NULL, charge_user VARCHAR(50) NOT NULL, user_mail VARCHAR(50) NOT NULL, user_password VARCHAR(30), user_sex VARCHAR(10)); ';
+    'CREATE TABLE IF NOT EXISTS user(id_user INTEGER PRIMARY KEY autoincrement, name_user VARCHAR(50) NOT NULL, last_name VARCHAR(50) NOT NULL, user_mail VARCHAR(50) NOT NULL, user_password VARCHAR(30) NOT NULL); ';
   // aqui puedo crear mas variables por si necesito mas tablas, como para guias, inventario etc.
 
 
